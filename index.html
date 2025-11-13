@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Notes App</title>
     <link rel="stylesheet" href="App.css">
 </head>
 <body>
-    <div class="weather-container">
-        <h1>🌤️ Weather App</h1>
-        <div class="search-section">
-            <input type="text" id="cityInput" placeholder="Enter city name...">
-            <button onclick="searchWeather()">Search</button>
+    <div class="app">
+        <h1>📝 My Notes</h1>
+        
+        <div class="input-section">
+            <textarea id="noteInput" placeholder="Write your note..."></textarea>
+            <button onclick="addNote()" id="saveBtn">Add Note</button>
         </div>
-        <div id="loading" class="loading" style="display:none;">Loading...</div>
-        <div id="weatherResult" class="weather-result"></div>
-        <div id="error" class="error" style="display:none;"></div>
+        
+        <div class="notes-list" id="notesList"></div>
     </div>
 
     <script src="App.js"></script>
