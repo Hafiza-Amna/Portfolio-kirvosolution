@@ -1,77 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hafiza Amna Naseem | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== Navbar ===== -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Hafiza Amna Naseem</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="todo-container">
+    <h1>My To-Do List</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button id="addBtn">Add Task</button>
+    </div>
+    <ul id="taskList">
+      <!-- Tasks will appear here -->
+    </ul>
+    <p id="emptyMsg">Your task list is empty.</p>
   </div>
-</nav>
 
-<script>
-  // Hamburger menu toggle
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
-
-  <!-- ===== Hero Section ===== -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h2> I'm <span>Hafiza Amna Naseem</span></h2>
-      <p>A Front-End Developer passionate about creating clean, responsive, and user-friendly websites that blend creativity with simplicity.</p>
-      <a href="#projects" class="btn">View My Project</a>
-    </div>
-    <div class="hero-image">
-      <img src="https://i.pinimg.com/736x/79/fa/79/79fa79c9ec794bdb77df26d10c6d2209.jpg" alt="Islamic girl using laptop">
-    </div>
-  </section>
-
-  <!-- ===== Projects Section ===== -->
-  <section id="projects" class="projects">
-    <h2>My Featured Project</h2>
-    <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Image Gallery Project">
-      <h3>Image Gallery</h3>
-      <p>A responsive and aesthetic front-end project showcasing images of nature, people, and architecture. Built using HTML, CSS, and JavaScript.</p>
-      <a href="https://hafiza-amna.github.io/Image-Gallery/" target="_blank" class="btn">View Project</a>
-    </div>
-  </section>
-
-  <!-- ===== Contact Section ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Write your message..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    <p>© 2025 Hafiza Amna Naseem | All Rights Reserved</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
-</html>                   
+</html>
