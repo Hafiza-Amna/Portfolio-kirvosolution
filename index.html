@@ -10,7 +10,7 @@
   <!-- ===== Navbar ===== -->
   <header>
     <nav class="navbar">
-      <h1 class="logo">Hafiza Amna</h1>
+      <h1 class="logo">Hafiza Amna Naseem</h1>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -18,6 +18,22 @@
       </ul>
     </nav>
   </header>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
+
+<script>
+  // Hamburger menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
   <!-- ===== Hero Section ===== -->
   <section id="home" class="hero">
